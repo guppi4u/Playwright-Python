@@ -205,3 +205,41 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# PLAYWRIGHT SPECIFIC 
+
+# .gitignore
+.venv/
+__pycache__/
+*.pyc
+*.sqlite3
+.pytest_cache/
+.vscode/
+
+# Playwright specific ignores
+test-results/
+**/__screenshots__/ # For visual regression baselines - only commit if approved
+*.png               # If you don't want to commit any generated screenshots
+report.html         # Generated HTML report
+
+# .gitignore
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE specific files (e.g., VS Code)
+.vscode/
+
+# Test reports and artifacts
+htmlcov/
+.coverage
+.pytest_cache/
+test-results/
+report.html
+*.png # Be careful with this - only if you don't want to commit ANY pngs, even baselines

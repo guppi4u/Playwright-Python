@@ -1,0 +1,9 @@
+
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11", // Adjust Python version if needed
+  "features": {
+    // ... (other features if any)
+  },
+  "postCreateCommand": "pip install playwright && playwright install"
+}
